@@ -41,36 +41,6 @@ end
 local SecurityLoader = loadstring(game:HttpGet("https://raw.githubusercontent.com/akmiliadevi/Tugas_Kuliah/refs/heads/main/SecurityLoader.lua"))()
 
 -- Load all modules (replace all your loadstring calls)
-local Net = ReplicatedStorage.Packages._Index["sleitnick_net@0.2.0"].net
-local Remotes = {
-    RE_FishCaught = Net:WaitForChild("RE/FishCaught"),
-    RE_Fishing = Net:WaitForChild("RE/FishingCompleted"),
-    RF_Charge = Net:WaitForChild("RF/ChargeFishingRod"),
-    RF_Minigame = Net:WaitForChild("RF/RequestFishingMinigameStarted"),
-    RF_Cancel = Net:WaitForChild("RF/CancelFishingInputs"),
-    RF_Sell = Net:WaitForChild("RF/SellAllItems"),
-    RF_Weather = Net:WaitForChild("RF/PurchaseWeatherEvent"),
-    RF_Radar = Net:WaitForChild("RF/UpdateFishingRadar"),
-    RF_EquipDiving = Net:WaitForChild("RF/EquipOxygenTank"),
-    RF_UnequipDiving = Net:WaitForChild("RF/UnequipOxygenTank"),
-    RF_PurchaseRod = Net:WaitForChild("RF/PurchaseFishingRod"),
-    RF_PurchaseBait = Net:WaitForChild("RF/PurchaseBait"),
-    RF_PurchaseBoat = Net:WaitForChild("RF/PurchaseBoat"),
-    RE_Cutscene = Net:WaitForChild("RE/ReplicateCutscene"),
-    RE_StopCutscene = Net:WaitForChild("RE/StopCutscene"),
-    RF_AutoFishing = Net:WaitForChild("RF/UpdateAutoFishingState"),
-    RE_EquipItem = Net:WaitForChild("RE/EquipItem"),
-    RE_Altar = Net:WaitForChild("RE/ActivateEnchantingAltar"),
-    RE_Altar2 = Net:WaitForChild("RE/ActivateSecondEnchantingAltar"),
-    RE_Equip = Net:WaitForChild("RE/EquipToolFromHotbar"),
-    RE_Unequip = Net:WaitForChild("RE/UnequipToolFromHotbar"),
-    RE_Favorite = Net:WaitForChild("RE/FavoriteItem"),
-    RE_FavoriteChanged = Net:WaitForChild("RE/FavoriteStateChanged"),
-    RE_ReplicateTextEffect = Net:WaitForChild("RE/ReplicateTextEffect"),
-    RE_ObtainedNewFishNotification = Net:WaitForChild("RE/ObtainedNewFishNotification"),
-    RE_FishingMinigameEvent = Net:WaitForChild("RE/FishingMinigameChanged"),
-    RF_Trade = Net:WaitForChild("RF/InitiateTrade"),
-}
 local instant = SecurityLoader.LoadModule("instant")
 local instant2 = SecurityLoader.LoadModule("instant2")
 local blatantv1 = SecurityLoader.LoadModule("blatantv1")
